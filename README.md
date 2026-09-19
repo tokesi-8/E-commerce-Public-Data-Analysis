@@ -1,44 +1,49 @@
 # E-Commerce Public Dataset Dashboard ✨
 
-## Deskripsi Proyek
-Proyek ini merupakan tugas akhir dari kelas "Belajar Analisis Data dengan Python" di Dicoding. Dataset yang digunakan adalah E-Commerce Public Dataset yang berasal dari Olist, sebuah platform e-commerce terkemuka di Brazil.
-Proyek ini mencakup seluruh siklus analisis data, mulai dari pengumpulan data (Gathering Data), penilaian (Assessing Data), pembersihan (Cleaning Data), Exploratory Data Analysis (EDA), Visualisasi Data, hingga pembuatan Dashboard interaktif menggunakan Streamlit. Selain itu, proyek ini juga menerapkan teknik analisis lanjutan berupa RFM Analysis (Recency, Frequency, Monetary) untuk melakukan segmentasi pelanggan berdasarkan perilaku belanja mereka.
+## Project Description
 
-# Pertanyaan Bisnis (SMART)
-Analisis dalam proyek ini difokuskan untuk menjawab dua pertanyaan bisnis utama berikut:
-- Bagaimana segmentasi pelanggan berdasarkan Recency, Frequency, dan Monetary (RFM) pada periode 2017–2018, dan berapa persentase kontribusi segmen pelanggan terbaik terhadap total revenue pada periode tersebut? (Fokus pada strategi segmentasi pelanggan bernilai tinggi untuk efisiensi budget marketing).
-- Negara bagian (state) mana yang menghasilkan revenue tertinggi, dan bagaimana rata-rata waktu pengiriman (delivery time) pada masing-masing state selama tahun 2018? (Fokus pada distribusi pendapatan geografis dan efisiensi logistik pengiriman).
-  
-# Struktur Direktori
-- /data : Berisi dataset mentah (format CSV) dari E-Commerce Public Dataset yang digunakan dalam analisis.
-- /dashboard : Berisi script utama dashboard.py yang dibangun menggunakan Streamlit, beserta dataset bersih main_data.csv yang digunakan untuk visualisasi.
-- notebook.ipynb : File Jupyter Notebook yang memuat dokumentasi langkah demi langkah dari keseluruhan proses analisis data.
-- requirements.txt : Daftar lengkap pustaka (library) Python yang dibutuhkan untuk menjalankan proyek ini.
-- url.txt : Tautan/URL akses untuk dashboard.
+This project is the final project for the **"Belajar Analisis Data dengan Python"** class on Dicoding. The dataset used is the **E-Commerce Public Dataset** from Olist, one of the leading e-commerce platforms in Brazil.
 
-## Setup Environment - Anaconda
+The project covers the complete data analysis workflow, starting from **Data Gathering, Data Assessing, Data Cleaning, Exploratory Data Analysis (EDA), Data Visualization**, and the development of an interactive dashboard using **Streamlit**. In addition, this project applies an advanced analytical technique called **RFM Analysis (Recency, Frequency, Monetary)** to segment customers based on their purchasing behavior.
 
-**Buat environment dengan Python 3.11.0 :**
+# Business Questions (SMART)
 
-```
+The analysis focuses on answering the following two main business questions:
+
+* How are customers segmented based on **Recency, Frequency, and Monetary (RFM)** during the 2017–2018 period, and what percentage of the total revenue was contributed by the highest-value customer segment during this period? *(Focus: high-value customer segmentation to improve marketing budget efficiency.)*
+* Which **state** generated the highest revenue, and what was the average **delivery time** for each state during 2018? *(Focus: geographic revenue distribution and delivery logistics efficiency.)*
+
+# Directory Structure
+
+* `/data` : Contains the raw dataset files (CSV format) from the E-Commerce Public Dataset used in the analysis.
+* `/dashboard` : Contains the main `dashboard.py` Streamlit dashboard script and the cleaned `main_data.csv` dataset used for visualization.
+* `notebook.ipynb` : Jupyter Notebook containing step-by-step documentation of the entire data analysis process.
+* `requirements.txt` : Contains the Python libraries required to run the project.
+* `url.txt` : Contains the access URL for the dashboard.
+
+## Environment Setup - Anaconda
+
+**Create an environment with Python 3.11.0:**
+
+```bash
 conda create --name main-ds python=3.11.0
 ```
 
-**Aktifkan environment:**
+**Activate the environment:**
 
-```
+```bash
 conda activate main-ds
 ```
 
-**Install library yang dibutuhkan:**
+**Install the required libraries:**
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 ## Run Streamlit App
 
-```
+```bash
 cd .\dashboard
 streamlit run dashboard.py
 ```
