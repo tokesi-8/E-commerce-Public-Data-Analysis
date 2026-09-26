@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project is the final project for the **"Belajar Analisis Data dengan Python"** class on Dicoding. The dataset used is the **E-Commerce Public Dataset** from Olist, one of the leading e-commerce platforms in Brazil.
+This project is the final project for the **"Fundamental Data Analisis"** class on Dicoding. The dataset used is the **E-Commerce Public Dataset** from Olist, one of the leading e-commerce platforms in Brazil.
 
 The project covers the complete data analysis workflow, starting from **Data Gathering, Data Assessing, Data Cleaning, Exploratory Data Analysis (EDA), Data Visualization**, and the development of an interactive dashboard using **Streamlit**. In addition, this project applies an advanced analytical technique called **RFM Analysis (Recency, Frequency, Monetary)** to segment customers based on their purchasing behavior.
 
