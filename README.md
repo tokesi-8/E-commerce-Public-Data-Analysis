@@ -54,9 +54,17 @@ The analysis revealed several important business insights:
 
 * **Revenue is spread across many customer segments:** RFM scoring of **95,770 unique customers** (total revenue **R$15,948,130.86**) produced 64 segments. No single segment dominates the revenue.
 * **Segment 444 is the top segment, but only by a small margin:** it contains 1,837 customers (1.92% of all customers) and contributes **4.83%** of total revenue (R$771,018.05). Segments 344 (4.29%), 244 (4.15%), and 144 (4.11%) are close behind.
+  ![Insights](images/1.png)
+  ![Insights](images/2.png)
+
 * **Frequency is the main differentiator of customer value:** all top 10 segments already have the highest Monetary score, so differences in value come from how often customers buy. Segment 444 has the highest average revenue per customer (about **R$420**), while segment 344 is the lowest of the top 10 (about R$385).
+
 * **São Paulo (SP) leads by a wide margin in 2018:** SP generated **R$3,327,240.09** in revenue, far above Rio de Janeiro (R$1,033,511.02) and Minas Gerais (R$989,191.50).
+  ![Insights](images/3.png)
+
 * **SP is also the fastest to deliver:** its average delivery time is **7.85 days**, while Bahia (BA) is the slowest at **18.69 days**. Most states fall within 11–19 days.
+  ![Insights](images/4.png)
+
 * **High revenue and fast delivery mostly go together, with exceptions:** 9 of the top 10 revenue states are also in the top 10 fastest delivery states. Rio de Janeiro ranks 2nd in revenue but only 8th in delivery speed (about 15.3 days), while Paraná ranks 5th in revenue but 2nd in delivery speed (11.15 days).
 
 ## Advices
