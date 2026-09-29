@@ -1,7 +1,7 @@
 # E-Commerce-Public-Data-Analysis
 
 🔗 **Live Dashboard:** [olist-rfm-dashboard.streamlit.app](https://olist-rfm-dashboard.streamlit.app/)
-![Dashboard Overview](images/dashboard-overview.png)
+![Dashboard Overview](images/overview.png)
 
 
 ## Background Problem
