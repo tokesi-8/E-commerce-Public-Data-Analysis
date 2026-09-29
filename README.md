@@ -1,6 +1,8 @@
 # E-Commerce-Public-Data-Analysis
 
 🔗 **Live Dashboard:** [olist-rfm-dashboard.streamlit.app](https://olist-rfm-dashboard.streamlit.app/)
+![Dashboard Overview](images/dashboard-overview.png)
+
 
 ## Background Problem
 
@@ -36,8 +38,6 @@ The analysis uses four tables from the Olist E-Commerce Public Dataset, joined t
 | `order_payments` | Payment value per order (basis for Monetary and revenue) |
 | `order_items` | Order-level item details (assessed during data wrangling) |
 
-Tables such as `geolocation`, `products`, `sellers`, and `order_reviews` were intentionally excluded because they are not needed to answer the two business questions and would add unnecessary merges.
-
 ## Data Preparation Highlights
 
 * **Delivery time** was calculated only for orders with `delivered` status (about 97% of 99,441 orders), and 8 "delivered" orders with no delivery date were removed as inconsistencies.
@@ -69,20 +69,6 @@ Based on the findings, the following steps are recommended:
 * Improve delivery capacity in Bahia through local logistics partners or additional distribution points.
 * Study Paraná's logistics practices as a reference for improving delivery speed in other states.
 
-## Interactive Dashboard
-
-The dashboard has been deployed and can be used directly in your browser, with no installation needed:
-
-👉 **https://olist-rfm-dashboard.streamlit.app/**
-
-**How to use it:**
-
-1. Open the link above. If the app has been idle, click **"Yes, get this app back up!"** to wake it up. This may take a few seconds.
-2. Use the sidebar controls to adjust what is shown in the charts.
-3. Explore the **RFM customer segmentation** section to see revenue contribution and customer counts per segment, including the top segment.
-4. Explore the **state analysis** section to compare total revenue and average delivery time per state in 2018.
-5. Hover over the charts to see exact values.
-
 ## Directory Structure
 
 ```
@@ -95,34 +81,3 @@ The dashboard has been deployed and can be used directly in your browser, with n
 ├── url.txt             # Dashboard access URL
 └── README.md
 ```
-
-## Run Locally
-
-### Environment Setup - Anaconda
-
-Create an environment with Python 3.11.0:
-
-```bash
-conda create --name main-ds python=3.11.0
-```
-
-Activate the environment:
-
-```bash
-conda activate main-ds
-```
-
-Install the required libraries:
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run Streamlit App
-
-```bash
-cd dashboard
-streamlit run dashboard.py
-```
-
-The app will open automatically at `http://localhost:8501`.
