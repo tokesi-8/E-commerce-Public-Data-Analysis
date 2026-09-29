@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
+from pathlib import Path
 sns.set(style='dark')
 
 
@@ -65,7 +66,7 @@ def create_bycustomer_count_state_df(df):
 
 # Load Data
 
-all_df = pd.read_csv("main_data.csv")
+all_df = pd.read_csv(Path(__file__).parent / "main_data.csv")
 
 datetime_columns = ["order_purchase_timestamp", "order_delivered_customer_date"]
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
